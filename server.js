@@ -46,6 +46,12 @@ app.post('/login', function (req, res) {
     }
 })
 
+app.get('/smthn', function (req, res) {
+    res.json({
+        message: 'hello'
+    });
+});
+
 app.listen(8000, function () {
     console.log("server is running")
 })
